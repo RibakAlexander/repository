@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Practice js, beginning. 28.01.2017</title>
+    <script>
+    /************* Task #1 ******************/
+        var g = 9.8,
+            h,
+            Vo,
+            t;
+        vo = +prompt("Enter Vo value:", "0");
+        t = +prompt("Enter t value:", "0");
+        h = vo * t + (g * t^2) / 2;
+        document.write("Task #1 <br>"+"h = " + h + "<hr/>");
+    
+    /************* Task #2 ******************/
+        document.write("Task #2 <br>");
+        var age;
+        age = +prompt("Enter your age:", "18");
+        if (age >= 0 || age == 5){
+            document.write("You aren't allowed to buy any alcohol in your "+ age + " years old age. <hr>");
+        } else if (age >= 6 || age == 11){
+            document.write("You aren't allowed to buy any alcohol in your "+ age + " years old age. <hr>");
+        } else if (age >= 12 || age == 17){
+                document.write("You aren't allowed to buy any alcohol in your "+ age + " years old age. <hr>");
+        } else if (age > 18){
+                document.write("You are allowed to buy any alcohol! <hr>");
+        }  
+    
+    /************* Task #3 ******************/
+        document.write("Task #3 <br>");
+        var a,
+            b,
+            sign,
+            $result;
+        a = +prompt("Enter your a value", "0");
+        sign = prompt("Enter + or - or * or / ", "+");
+        b = +prompt("Enter your b value", "0");
+        switch(sign){
+            case '+':
+                $result = a + b;
+                document.write(a + " + " + b + " = " + $result);    
+                break;
+            case '-':
+                $result = a - b;
+                document.write(a + " - " + b + " = " + $result);    
+                break;
+            case '*':
+                $result = a * b;
+                document.write(a + " * " + b + " = " + $result);    
+                break;
+            case '/':
+                $result = a / b;
+                document.write(a + " / " + b + " = " + $result);    
+                break;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
