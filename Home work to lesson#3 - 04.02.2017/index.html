@@ -43,44 +43,83 @@
     <!--=========Task#2 [START]=========-->
     <div id="sort"></div>
     <script>
-        var a = [1, 4, 11, 2, 9, 99, 5],
-            b = [7];
-               
-        for (var i=0, leng=a.length; i<leng; i++) {
-            if (a[i]<a[i+1]){
-                b[i] = a[i];
-            } else {
-                b[i] = a[i+1];
-                a[i] = a[i+1];
-                b[i+1] = a[i];
-            }
+        var arr = [1, 4, 11, 2, 9, 99, 5];
+            
+        function compareNumeric(a, b) {
+            if (a > b) return 1;
+            if (a < b) return -1;
         }
-        b;
+        arr.sort(compareNumeric);
+        document.getElementById('sort').innerHTML = arr;
     </script>
     <!--=========Task#2 [END]===========-->
     <!--=========Task#3 [START]=========-->
+    <script>
+        /************* Task #3 ******************/
+        var a,
+            b,
+            sign,
+            $result;
+        a = +prompt("Enter your a value", "0");
+        sign = prompt("Enter + or - or * or / ", "+");
+        b = +prompt("Enter your b value", "0");
+        switch(sign){
+            case '+':
+                plus(a, b);
+                document.write(a + " + " + b + " = " + $result);    
+                break;
+            case '-':
+                minus(a, b);
+                document.write(a + " - " + b + " = " + $result);    
+                break;
+            case '*':
+                div(a, b);
+                document.write(a + " * " + b + " = " + $result);    
+                break;
+            case '/':
+                multi(a, b);
+                document.write(a + " / " + b + " = " + $result);    
+                break;
+        }
+        function plus(a, b){
+            return $result = a + b; 
+        }
+        function minus(a, b){
+            return $result = a - b; 
+        }
+        function div(a, b){
+            return $result = a / b; 
+        }
+        function multi(a, b){
+            return $result = a * b; 
+        }
+        function calc(cbf, a, b){
+            return cbf(a, b);
+        }
+    </script>
     <!--=========Task#3 [END]===========-->
     
     <!--=========Task#4 [START]=========-->
+    <br>
     <div id="board"></div>
     <script>
-            var col = 8,
-                row = 8,
-                b = 0,
-                $table = "<table>";
+        var col = 8,
+            row = 8,
+            b = 0,
+            $table = "<table>";
 
-            for (var i = 0; i < col; i++) {
-                $table += "<tr>";
-                for (var j = 0; j < row; j++){
-                    if ( (i%2==0 && j%2 == 1) || (i%2==1 && j%2 == 0) ){
-                    $table += "<td class='bg_b'></td>";
-                    } else {
-                        $table += "<td></td>";
-                    }
+        for (var i = 0; i < col; i++) {
+            $table += "<tr>";
+            for (var j = 0; j < row; j++){
+                if ( (i%2==0 && j%2 == 1) || (i%2==1 && j%2 == 0) ){
+                $table += "<td class='bg_b'></td>";
+                } else {
+                    $table += "<td></td>";
                 }
-                $table += "</tr>";
             }
-            $table += "</table>";
+            $table += "</tr>";
+        }
+        $table += "</table>";
         document.getElementById('board').innerHTML = $table;
     </script>
     <!--=========Task#4 [END]===========-->
