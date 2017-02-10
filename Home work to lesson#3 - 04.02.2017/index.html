@@ -123,6 +123,29 @@
         document.getElementById('board').innerHTML = $table;
     </script>
     <!--=========Task#4 [END]===========-->
+    <!--=========Task#5 [START]=========-->
+    <br>
+    <script>
+        var person = {};
+        function ask(){
+            person.name = prompt("Введите свое имя:");
+            person.sname = prompt("Введите свою фамилию:");
+            person.age = prompt("Введите свой возраст:");
+        }
+        function say(){
+            document.write("Имя: " + person.name + "<br/>");
+            document.write("Фамилия: " + person.sname + "<br/>");
+            document.write("Возраст: " + person.age + "<br/>");
+        }
+        do {
+            ask();
+            say();
+            repeater = confirm("Пройти заполнение еще раз?");
+        }
+        while (repeater);
+        
+    </script>
+    <!--=========Task#5 [END]===========-->
     
 </body>
 </html>
