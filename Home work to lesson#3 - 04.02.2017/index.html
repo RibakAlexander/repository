@@ -126,24 +126,34 @@
     <!--=========Task#5 [START]=========-->
     <br>
     <script>
-        var person = {};
+        var persons = [{
+                name: '',
+                surname: '',
+                age: ''
+            },{}];
+        for (var i = 0; i<persons.length; i++){
+            persons[i] = {
+                name: '',
+                surname: '',
+                age: ''
+            }
+            do {
+                ask();
+                say();
+                repeater = confirm("Пройти заполнение еще раз?");
+            }
+            while (repeater);
+        }
         function ask(){
-            person.name = prompt("Введите свое имя:");
-            person.sname = prompt("Введите свою фамилию:");
-            person.age = prompt("Введите свой возраст:");
+                persons[i]['name'] = prompt("Введите свое имя:");
+                persons[i]['surname'] = prompt("Введите свою фамилию:");
+                persons[i]['age'] = prompt("Введите свой возраст:");    
         }
         function say(){
-            document.write("Имя: " + person.name + "<br/>");
-            document.write("Фамилия: " + person.sname + "<br/>");
-            document.write("Возраст: " + person.age + "<br/>");
-        }
-        do {
-            ask();
-            say();
-            repeater = confirm("Пройти заполнение еще раз?");
-        }
-        while (repeater);
-        
+            document.write("Имя: " + persons[i]['name'] + "<br/>");
+            document.write("Фамилия: " + persons[i]['surname'] + "<br/>");
+            document.write("Возраст: " + persons[i]['age'] + "<br/>");
+        }    
     </script>
     <!--=========Task#5 [END]===========-->
     
