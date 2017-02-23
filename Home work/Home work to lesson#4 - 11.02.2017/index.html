@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW 18.02.2017</title>
+</head>
+<body>
+
+<!--=========Task#1 [START]=========-->
+<br>
+<script>
+    var persons = [{
+        },{}];
+    for (var i = 0; i<persons.length; i++){
+        persons[i] = {
+            name: '',
+            surname: '',
+            age: ''
+        }
+        do {
+            ask();
+            say();
+            repeater = confirm("Пройти заполнение еще раз?");
+        }
+        while (repeater);
+    }
+    function ask(){
+            persons[i]['name'] = prompt("Введите свое имя:");
+            persons[i]['surname'] = prompt("Введите свою фамилию:");
+            persons[i]['age'] = prompt("Введите свой возраст:");    
+    }
+    function say(){
+        document.write("Имя: " + persons[i]['name'] + "<br/>");
+        document.write("Фамилия: " + persons[i]['surname'] + "<br/>");
+        document.write("Возраст: " + persons[i]['age'] + "<br/>");
+    }    
+</script>
+<!--=========Task#1 [END]===========-->
+     
+</body>
+</html>

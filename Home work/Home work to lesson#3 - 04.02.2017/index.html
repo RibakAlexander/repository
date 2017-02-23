@@ -125,12 +125,9 @@
     <!--=========Task#4 [END]===========-->
     <!--=========Task#5 [START]=========-->
     <br>
+    <div id="table"></div>
     <script>
-        var persons = [{
-                name: '',
-                surname: '',
-                age: ''
-            },{}];
+        var persons = [{},{}];
         for (var i = 0; i<persons.length; i++){
             persons[i] = {
                 name: '',
@@ -153,7 +150,28 @@
             document.write("Имя: " + persons[i]['name'] + "<br/>");
             document.write("Фамилия: " + persons[i]['surname'] + "<br/>");
             document.write("Возраст: " + persons[i]['age'] + "<br/>");
-        }    
+        }
+        
+        var table = document.createElement('table');
+            table.setAttribute('border', '1');
+            table.setAttribute('color', '000');
+            table.setAttribute('width','1000');
+            table.setAttribute('height', '100');
+        var tbody = document.createElement('tbody');
+        var tr = document.createElement('tr');    
+        tr.innerHTML = '<td>Имя:</td><td>Фамилия:</td><td>Возраст:</td>';
+            tbody.appendChild(tr);
+        for(var i = 0; i < persons.length; i++){
+            var tr = document.createElement('tr');
+                for (var j = 0; j < 3; j++) {
+                var td = document.createElement('td');
+                var item = persons[i][item[j]];
+                    tr.appendChild(td);
+                }
+                tbody.appendChild(tr);
+        }
+        table.appendChild(tbody);
+        document.getElementById('table').appendChild(table);
     </script>
     <!--=========Task#5 [END]===========-->
     
