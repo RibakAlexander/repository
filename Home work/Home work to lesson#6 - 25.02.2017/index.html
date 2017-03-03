@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<javascript>
+    var arr1 = [1, 3, 5, 7],
+        arr2 = [2, 4, 6, 8],
+        arr3 = [],
+        leng = arr1.length + arr2.length;
+    function mergeArray(arr1, arr2){
+        for (var i = 0, j = 0, g = 0; i < leng; i++){
+            if (i%2){
+                arr3[i] = arr1[j];
+                j++;
+            } else {
+                arr2[i] = arr2[g];
+                g++;
+            }
+        }
+    }
+    console.log(mergeArray());
+</javascript>
+</head>
+<body>
+    
+</body>
+</html>
