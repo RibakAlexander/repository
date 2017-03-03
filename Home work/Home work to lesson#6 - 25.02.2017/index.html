@@ -203,31 +203,73 @@ v   var el = document.getElementById('text25');
             leng = arr1.length + arr2.length,
             j = 0,
             g = 0;
-        
-        for (var i=0; i<leng; i++){
-            if (i%2 == 0){
-                arr3[i] = arr1[j];
-                j++;
-            } else {
-                arr3[i] = arr2[g];
-                g++;
+        function mergeArray(a, b){
+            for (var i=0; i<leng; i++){
+                if (i%2 == 0){
+                    arr3[i] = a[j];
+                    j++;
+                } else {
+                    arr3[i] = b[g];
+                    g++;
+                }
             }
+            return arr3;
         }
-        alert(arr3);
+        alert(mergeArray(arr1, arr2));
     </script>
     
     <!--=========Task#20 [END]===========-->
     <!--=========Task#21 [START]=========-->
-    
+    Напишите функцию myFunc, которая принимает в качестве параметра название CSS
+    класса и возвращает массив со всеми элементами HTML страницы, у которых задан
+    этот класс.
+    <script>
+        function myFunc(a){
+            var cssVal = document.getElementsByClassName(a);
+        }
+    </script>
     <!--=========Task#21 [END]===========-->
     <!--=========Task#22 [START]=========-->
-    
+    Какое последнее значение выведет этот код? Почему?
+    var i=3;
+    while(i){
+        alert(i--);
+    }
+    Ответ: последним выведенным значением будет 1, т.к. 1 и более значение является
+    true для конструкции while, а 0 false
     <!--=========Task#22 [END]===========-->
     <!--=========Task#23 [START]=========-->
-    
+    Что выведет этот код в консоль?
+    var myNumber = 5;
+    if (myNumber === 4 || true){
+        console.log('The number is exactly 2!');
+    } else {
+        console.log('The number is exactly 5!');
+    }
+    Ответ: The number is exactly 2!
     <!--=========Task#23 [END]===========-->
     <!--=========Task#24 [START]=========-->
-    
+    Напишите функцию myFunc, которая принимает в качестве параметра числовую
+    переменную myNumber и увеличивает ее значение на 10. Если в функцию передается
+    переменная другого типа (не Number), то фунция выводит сообщение "Вы передали
+    не Number!" и завершает свою работу, возвращая значение myNumber. Код, который
+    приведен ниже должен корректно работать и выдавать 20.
+    function myFunc... здесь ваш код...
+    var myNumber = 10;
+    myNumber = myFunc(myNumber);
+    console.log(myNumber);// здесь должно быть выведено 20
+    <script>
+        function myFunc(a){
+            if (typeof(a) !== NaN){
+                return a+10;
+            } else {
+                alert('Вы передали не Number!');
+            }
+        }
+        var myNumber = 10;
+        myNumber = myFunc(myNumber);
+        console.log(myNumber);
+    </script>
     <!--=========Task#24 [END]===========-->
     
 </body>
