@@ -1,0 +1,79 @@
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {clear: both;}
+
+
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+#header {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px 0;
+}
+.logo {
+    float: left;
+}
+.nav {
+    float: right;
+    padding-top: 5px;
+}
+.nav li {
+    float: left;
+    margin-right: 40px;
+}
+.nav li:last-child {
+    margin-right: 0;
+}
+.nav a {
+    text-transform: uppercase;
+    font: 14px Arial, sans-serif;
+    color: #fff;
+}
+.nav a:hover {
+    color: #fed136;
+}
+#home {
+    height: 700px;
+    background: #222 url(../img/home-bg.jpg) no-repeat center bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 270px;
+    text-align: center;
+    color: #fff;
+}
+#home h3 {
+    font: 40px/40px Arial, sans-serif;
+    margin-bottom: 40px;
+}
+#home h1 {
+    font: 75px/75px Arial, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.btn {
+    background: #fed136;
+    padding: 20px 30px;
+    display: inline-block;
+    font: bold 24px/24px Arial, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+.btn:hover {
+    background: #deb31f;
+    color: #fff;
+}
