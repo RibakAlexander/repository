@@ -1,0 +1,89 @@
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+#header {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px 0;
+}
+.logo {
+    float: left;
+}
+.logo a {
+    font: 24px Arial, sans-serif;
+    color: #fed136;
+    text-decoration: none;
+}
+.nav {
+    float: right;
+    padding: 5px;
+}
+.nav li {
+    float: left;
+    margin-right: 40px;
+}
+.nav li:last-child {
+    margin-right: 0;
+}
+.nav a {
+    color: #fed136;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#home {
+    height: 700px;
+    background: #222 url(../img/home-bg.jpg) no-repeat center bottom;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    padding-top: 270px;
+    text-align: center;
+    color: #fff;
+}
+#home .about-img img {
+    display: inline-block;
+    width: 246px;
+    height: 246px;
+    border: 3px solid #fff;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+         -o-border-radius: 50%;
+            border-radius: 50%;
+}
+#home h1 {
+    font: 37px/37px Arial, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+#home h3 {
+    font: 24px/24px Arial, sans-serif;
+    margin-bottom: 40px;
+}
+#home .icon-download {
+    font-size: 75px;
+    color: #fff;
+}
+.btn {
+    background: #2D3E50;
+    color: #fff;
+    padding: 20px 30px;
+    display: inline-block;
+    font: bold 24px/24px Arial, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+         -o-border-radius: 4px;
+            border-radius: 4px;
+    border: 2px solid #fff;
+}
+.btn:hover {
+    background: #fff;
+    color: #2D3E50;
+    border: 2px solid #2D3E50;
+}

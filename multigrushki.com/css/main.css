@@ -1,0 +1,361 @@
+/************************************************************************************************************/
+body {
+     margin: 0;
+     font: normal 17px "Noto Sans";
+}
+@font-face {
+     font-family: "Noto Sans";
+     src: url(./fonts/noto_sans.ttf);
+}
+.clear {
+    clear: both;
+}
+
+/************************************************************************************************************/
+#layout {
+     background: #eaf5f8;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: -32767;
+}
+#layout_top {
+     height: 234px;
+     position: absolute;
+     width: 100%;
+     z-index: -32766;
+     background: #fff url(../img/page_bg_img_top.png) repeat-x;
+}
+#layout_top_in {
+     height: 234px;
+     background: url(../img/page_bg_img_bottom.png) repeat-x bottom;
+}
+
+/************************************************************************************************************/
+#layin {
+     /*background: gray;*/
+     width: 1171px;
+     margin: 0 auto;
+     /*display:none;*/
+}
+
+/************************************************************************************************************/
+
+#header {
+/*     background: grey;*/
+     height: 230px;
+     padding-top: 1px;
+}
+#header h1 {
+    margin-top: 16px;
+    margin-left: 10px;
+    font: 80px/120px "Noto Sans";
+    /*float: left;*/
+    /*display: inline;*/
+}
+#header h1 a {
+     text-decoration: none;
+     color: #35c99d;
+}
+#header h1 a:hover {
+     color: #5589e9;
+}
+#header h1 b {
+     color: #359dc9;
+     /*font-weight: bold;*/
+}
+#header h1 a:hover b {
+     color: #ff6f42;
+}
+#call_back {
+    background: #eee;
+    float: right;
+    font: 14px/17px "Noto Sans";
+    /*height: 70px;*/
+    padding: 27px 20px 26px;
+    margin-top: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#call_back:hover {
+    background: #ccc;
+}
+#call_back:hover p {
+    /*background-position: bottom left;*/
+    background-position: 0px -23px; /* первое значение сдвигает по Х, второе по У паттерн */
+}
+#call_back p  {
+     color: #359dc9;
+     padding-left: 20px;
+     /*margin: 27px 0 0;*/
+     margin:0;
+     background: url(../img/ico_phone.png) no-repeat;
+}
+
+
+
+
+/************************************************************************************************************/
+#middle {
+     /*background: #FF9B73;*/
+     /*height: 2000px;*/
+     margin-top: -68px;
+}
+    /************************************************/
+    #nav {
+        background: #fff;
+        width: 270px;
+        padding-bottom: 2px;
+        border-radius: 24px;
+        /*float: left;*/
+    }
+    #nav h2 {
+        background: #ff6a3b;
+        color: #fff;
+        font: 700 30px/70px "Noto Sans";
+        padding: 0 20px;
+        margin: 0;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+    }
+    #nav ul {
+        list-style: none;
+        padding: 0 20px;
+        margin: 4px 0 0;
+    }
+    #nav li {
+        border-bottom: 1px solid #cde0e5;
+    }
+    #nav a {
+        text-decoration: none;
+        color: #359dc9;
+        line-height: 50px;
+        display: block;
+    }
+    #nav a:hover {
+        color: #ff6f42;
+    }
+    #nav .last{
+        border-bottom: 0!important;
+    }
+
+    /***********************************************/
+    #right_side {
+        /*margin-left: 300px;*/
+        float: right;
+    }
+    #article h2 {
+        background: #bc6dd3;
+        color: #fff;
+        font: bold 30px/70px "Noto Sans";
+        border-bottom: 1px solid #cde0e5;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        padding: 0 20px;
+        margin: 0;
+    }
+    #goods {
+        background: #fff;
+        border-top: 1px solid #fff;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+        padding-bottom: 11px;
+    }
+    #goods .card {
+        border-right: 1px solid #cde0e5;
+        float: left;
+        width: 179px;
+        padding: 0 19px;
+    }
+    #goods .card.last {
+        border: 0;
+    }
+    #goods .card a {
+        display: block;
+        height: 280px;
+        text-decoration: none;
+        font: 14px/22px "Noto Sans";
+        overflow: hidden;
+    }
+    #goods .card span {
+        display: block;
+        width: 177px;
+        height: 177px;
+        overflow: hidden;
+        border-radius: 24px;
+        margin: 0 auto;
+    }
+    #goods .card img {
+        width: auto;
+        height: 177px;
+    }
+    #goods .card u {
+        display: block;
+        margin-top: 9px;
+        color: #35c99d;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    #goods .card p {
+        color: #ff6f42;
+        margin-top: 2px;
+
+    }
+    #goods .card a:hover p {
+        text-decoration: underline;
+    }
+    #goods .card button {
+        /*display: block;*/
+        /*line-height: 20px;*/
+        height: 48px;
+        background: #fff url(../img/btn_pic.png) no-repeat right;
+        font: 20px/20px "Noto Sans";
+        border: 1px solid #cde0e5;
+        border-radius: 15px;
+        margin-top: 5px;
+        width: 100%;
+        padding: 0 0 0 20px;
+        text-align: left;
+    }
+
+    #goods .hr {
+         background: #cde0e5;
+         height: 1px;
+    }
+    #goods .hr_left {
+         float: left;
+    }
+    #goods .hr_right {
+         float: right;
+    }
+    #goods .hr_left, #goods .hr_right {
+         width: 30px;
+         line-height: 30px;
+         background: #359dc9;
+         color: #fff;
+         text-align:center;
+         border-radius: 8px;
+         margin-top: -15px;
+         margin-bottom: -30px;
+        /*margin-right: -30px;*/
+    }
+    #details {
+        width: 870px;    
+    }
+    #details img {
+        width: auto;
+        height: 400px;
+        margin: 15px 100px 15px 15px;
+        float: left;
+    }
+    #details h3 {
+        color: #1a70c2;
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0;
+        padding-top: 100px;
+    }
+    #details #in_stock {
+        color: limegreen;
+        
+    }
+    #details h4 {
+        font-size: 36px;
+        font-weight: bold;
+        margin: 0 0 15px;
+    }
+    #details button{
+        height: 48px;
+        background: #fff url(../img/btn_pic.png) no-repeat right;
+        font: 20px/20px "Noto Sans";
+        border: 1px solid #cde0e5;
+        border-radius: 15px;
+        margin-top: 5px;
+        width: 180px;
+        padding: 0 0 0 20px;
+        text-align: left;
+    }
+    #details .btn_details {
+        margin-top: 20px;
+    }
+    #details .btn_details span {
+        width: 300px;
+        height: 42px;
+        line-height: 42px;
+        background-color: #1a70c2;
+        color: #fff;
+        font: 17px "Noto Sans";
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        margin: 0 15px;
+        padding: 10px 10px 0;
+        display: block;
+    }
+    #details .btn_details p {
+        margin: 0 15px;
+        padding: 15px;
+        border: 2px solid #1a70c2;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    /************************************************/
+    #blocks {
+        color: #fff;
+        margin: 30px 0;
+    }
+    #blocks h2 {
+        font: 700 30px/70px "Noto Sans";
+        margin: 0;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+    }
+    #about, #events {
+        border-radius: 24px;
+        padding: 0 20px 20px;
+        width: 380px;
+    }
+    #about p, #events p {
+        margin-bottom: 0;
+    }
+    #about {
+        background: #ff6a3b;
+        float: left;
+    }
+    #events {
+        background: #349ac6;
+        float: right;
+    }
+
+/************************************************************************************************************/
+#layout_bottom {
+     background: #fff url(../img/page_bg_img_bottom2.png) repeat-x;
+     /*height: 70px;*/
+     /*position: absolute;*/
+     /*bottom: 0;*/
+     /*width: 100%;*/
+     /*z-index: -32766;*/
+     /*outline: 1px solid black;*/
+}
+
+#footer {
+     /*background: #fff;*/
+     font: 14px/18px "Noto Sans";
+     color: #359dc9;
+     /*padding: 0 20px;*/
+     /*padding-bottom: 1px;*/
+     /*margin: 0;*/
+     padding: 26px 0;
+     width: 1171px;
+     margin: 0 auto;
+}
+#footer p {
+     margin: 0;
+     text-align: center;
+}
+
+
+
+
