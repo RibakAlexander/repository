@@ -127,30 +127,29 @@
     <br>
     <div id="table"></div>
     <script>
-        var persons = [{},{}];
-        for (var i = 0; i<persons.length; i++){
-            persons[i] = {
-                name: '',
-                surname: '',
-                age: ''
-            }
-            do {
-                ask();
-                say();
-                repeater = confirm("Пройти заполнение еще раз?");
-            }
-            while (repeater);
-        }
-        function ask(){
-                persons[i]['name'] = prompt("Введите свое имя:");
-                persons[i]['surname'] = prompt("Введите свою фамилию:");
-                persons[i]['age'] = prompt("Введите свой возраст:");    
-        }
-        function say(){
-            document.write("Имя: " + persons[i]['name'] + "<br/>");
-            document.write("Фамилия: " + persons[i]['surname'] + "<br/>");
-            document.write("Возраст: " + persons[i]['age'] + "<br/>");
-        }
+		
+		function Human(){
+			function ask(){
+                this.name = prompt("Введите свое имя:");
+                this.surname = prompt("Введите свою фамилию:");
+                this.age = prompt("Введите свой возраст:");
+			}
+			function say(){
+				document.write("Имя: " + this.name + "<br/>");
+				document.write("Фамилия: " + this.surname + "<br/>");
+				document.write("Возраст: " + this.age + "<br/>");
+			}
+			this.repeat = function (){
+				do {
+					ask();
+					say();
+					var repeater = confirm("Пройти заполнение еще раз?");
+				}
+				while (repeater);
+			};
+		}
+		var person = new Human();
+		person.repeat();
         
         var table = document.createElement('table');
             table.setAttribute('border', '1');

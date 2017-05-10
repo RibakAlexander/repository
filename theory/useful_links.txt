@@ -1,0 +1,35 @@
+1. Приятная сборка frontend проекта - https://habrahabr.ru/post/250569/  
+2. Использование Web Workers - https://developer.mozilla.org/ru/docs/DOM/Using_web_workers
+3. Проверка на валидность кода - http://validator.w3.org/
+4. Вакансии на DOU - https://jobs.dou.ua/vacancies/?city=%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%B0&category=Front%20End
+5. Верстка из psd | Одностраничник - https://www.youtube.com/watch?v=98rUSTa5-dE
+6. Ссилка крутого чувака, що ексаскрипт поясняет Functional programming in JavaScript - https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84
+7. Курс который советую посмотреть на досуге - Use create-react-app to Setup a Simple React App - https://egghead.io/lessons/react-react-fundamentals-development-environment-setup
+8. Тестирование №979 - Смотреть видеоурок - https://php-academy.kiev.ua/video/view/979-%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5
+9. AngularJS Tutorial | Code School - https://www.codeschool.com/courses/shaping-up-with-angularjs
+10. Выразительный JavaScript: Document Object Model (объектная модель документа) - https://habrahabr.ru/post/243815/
+11. HTML ЦВЕТА - https://colorscheme.ru/html-colors.html
+12. Flexbox CSS3 - https://www.youtube.com/playlist?list=PLY4rE9dstrJzj68Y8SlQlhIdb5hbGQLIU
+13. Пять JavaScript-хаков — For Web - http://forwebdev.ru/javascript/pyat-javascript-xakov/
+14. Математика в JavaScript - https://habrahabr.ru/post/312880/
+15. Единицы измерения CSS (px, %, em, vw, vh, vmin, vmax) и функция calc - http://shpargalkablog.ru/2013/03/px-em-calc.html
+16. Learn Sass - https://www.codecademy.com/learn/learn-sass
+17. FLEXBOX FROGGY - http://flexboxfroggy.com/
+18. Flaticon, the largest database of free vector icons - http://www.flaticon.com/
+19. Что такое Flexbox? Описание всех css свойств, основные принципы, преимущества и недостатки. - html5.by - http://html5.by/blog/flexbox/
+20. API Табло — Настройка виджета сайта — Технологии Яндекса - https://tech.yandex.ru/browser/tableau/doc/dg/concepts/create-widget-docpage/
+21. lodash (underscore) — знай свою стандартную библиотеку - https://habrahabr.ru/post/217515/
+22. Learning Functional Programming with JavaScript - JSUnconf 2016 -https://www.youtube.com/watch?v=e-5obm1G_FY
+23. PLACEHOLD.IT A quick and simple image placeholder service. - http://placehold.it/
+24. Скринкаст по Gulp - https://www.youtube.com/playlist?list=PLDyvV36pndZFLTE13V4qNWTZbeipNhCgQ
+25. Function.prototype.bind() - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
+26. Chrome DevTools Tutorial | Code School - https://www.codeschool.com/courses/discover-devtools
+27. Адаптивный слайдер для сайта - Slick.js - https://www.youtube.com/watch?v=MlWkcBqWISk&t=712s
+28. JavaScript паттерны… для чайников - https://habrahabr.ru/post/132472/
+29. jQuery Set Content and Attributes - https://www.w3schools.com/jquery/jquery_dom_set.asp
+30. Собеседование JavaScript вопросы - http://www.quizful.net/interview/js
+31. Ответы на вопросы на собеседование Основы JavaScript (часть 1). - https://jsehelper.blogspot.com/2016/01/javascript.html
+32. GitHub Pages - https://pages.github.com/
+33. Good Practices for Testing React Apps – Tucker Connelly – Medium - https://medium.com/@TuckerConnelly/good-practices-for-testing-react-apps-3a64154fa3b1
+34. Команды Emmet - шпаргалка для плагина html редактора Sublime Text - Как стать программистом - http://itman.in/komandy-emmet-shpargalka-dlya-plagina-html-redaktora-sublime-text/
+35. Скринкаст по Gulp - https://www.youtube.com/playlist?list=PLDyvV36pndZFLTE13V4qNWTZbeipNhCgQ
