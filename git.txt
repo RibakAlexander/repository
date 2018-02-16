@@ -5,7 +5,7 @@
 git clone
 git add -A
 git commit -m "whay you have done"
-git push origin NAME_BRANCH
+git push origin alex (NAME_BRANCH)
 git pull
 git stash apply
 git stac
