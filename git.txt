@@ -1,4 +1,22 @@
-﻿посмотреть видео с ютуба
+Добавление готово проекта в github или bitbucket.org:
+1. заходим в ssh (putty)
+2. набираем sudo apt-get install git (если git не установлен на сервере)
+3. перейти в папку с проектом ( cd /var/www/admin/www/cash-website.ru)
+4. клонируем пустой репозиторий в папку temp (git clone https://ribakalex@bitbucket.org/ribakalex/cash-website.ru.git temp)
+5. перемещаем сожержимое папки temp в корень сайта ( mv temp/* ../; rm -rf temp; )
+- mv temp/* ../ переместить
+- rm -rf temp удалить папку temp
+6. git status
+7. git add *
+8. git commit -m "init"
+9. git push (только под master)
+10. git checkout -b frontend/alex (создаем новую ветку и сразу переходим)
+11. git checkout frontend/alex или master (перейти на уже созданную ветку)
+12. git branch - проверка текущей ветки
+13. 
+
+
+посмотреть видео с ютуба
 на леарн прочитать ес2015 es modern
 вэб шторм
 почитать о git hub
