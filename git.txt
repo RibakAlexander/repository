@@ -15,6 +15,15 @@
 12. git branch - проверка текущей ветки
 13. 
 
+autsourse
+1.клонируем репозиторий (git clone https://ribakalex@bitbucket.org/ribakalex/cash-website.ru.git)
+2. git checkout -b frontend/alex (создаем новую ветку и сразу переходим)
+3. вносим изменения локально (добавляем файл)
+4. git add *
+5. git commit -m "created plugin Name"
+6. git push origin frontend/alex
+7.
+
 
 посмотреть видео с ютуба
 на леарн прочитать ес2015 es modern
