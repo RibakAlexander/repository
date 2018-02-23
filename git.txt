@@ -31,7 +31,7 @@ autsourse
 почитать о git hub
 git clone
 git add -A
-git commit -m "whay you have done"
+git commit -m "what you have done"
 git push origin alex (NAME_BRANCH)
 git pull
 git stash apply
