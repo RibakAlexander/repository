@@ -22,7 +22,7 @@ autsourse
 4. git add *
 5. git commit -m "created plugin Name"
 6. git push origin frontend/alex
-7.
+7. git stash - сбросить изменения на компе, не закомиченные, для получения самой свежей версии репозитория с git-а
 
 
 посмотреть видео с ютуба
