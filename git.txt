@@ -23,6 +23,9 @@ autsourse
 5. git commit -m "created plugin Name"
 6. git push origin frontend/alex
 7. git stash - сбросить изменения на компе, не закомиченные, для получения самой свежей версии репозитория с git-а. Откатить изменения до последнего коммита
+8. git reset --HEAD либо git reset --mixed - сбросить свой последний коммит
+
+
 
 
 посмотреть видео с ютуба
